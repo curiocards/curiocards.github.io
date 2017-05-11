@@ -1,6 +1,7 @@
 <html>
 <head>
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?kit=hzfXlbmSeIzeOBEdYZrfu7lu-aQGDDvlx28eL4sdsSpoXu0TeVWAlHJquSIDHMls" rel="stylesheet" type="text/css">
     <link href="custom.css" rel="stylesheet">
 
 </head>
@@ -13,20 +14,96 @@
     </div>
   </div>
   <div class="row">
-  <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="row">
+    <br>
+    <br>
+    <br>
+    <h2>Welcome Collectors!</h2>
   </div>
   <div class="row">
     <div class="col-sm-3">
-      <img src="curio_coon.jpg">
+      <img src="curio_coon.jpg" width="200">
     </div>
-    <div class="col-sm-9">
-      Spicy jalapeno bacon ipsum dolor amet pork loin venison pig bacon drumstick sirloin pancetta jerky strip steak. Doner t-bone tenderloin porchetta venison ham hock. Alcatra ground round biltong, tail kielbasa short loin chicken short ribs. Venison bresaola ham hock hamburger jerky spare ribs meatloaf. Venison flank jowl spare ribs, bacon kielbasa fatback biltong. Kevin leberkas ground round, meatloaf jerky picanha shank short ribs ham hock pork loin boudin cow. Prosciutto kielbasa doner, tenderloin turducken sirloin pork belly boudin swine
+    <div class="col-sm-9 largerfont">
+      Hi there, I'm Curio!  And I'm excited to bring you Curio Cards: the future of digital collectibles.  We're just getting started, but I found these <b>Apples, Nuts and Berries</b> and I wanted to share them with you:
+      <br>
+      <br>
+      <center>
+        <a href="https://mycuriocards.blogspot.com/#start">
+          <img src="start_collection.png">
+        </a>
+      </center>
+    </div>
+  </div>
+  <div class="row">
+    <br>
+    <br>
+  </div>
+  <div class="row">
+    <center>
+      <h2>Start Collecting Today</h2>
+    </center>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <center>
+        <img src="curio1.jpg" width="250">
+        <br><br>
+        Apple (#001)
+      </center>
+    </div>
+    <div class="col-sm-4">
+      <center>
+        <img src="curio2.jpg" width="250">
+        <br><br>
+        Nuts (#002)
+      </center>
+    </div>
+    <div class="col-sm-4">
+      <center>
+        <img src="curio3.jpg" width="250">
+        <br><br>
+        Berries (#003)
+      </center>
     </div>
 
   </div>
 
+  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="myval"></div>
+
 </div>
 
+    <script src="jquery-3.2.1.min.js"></script>
     <script src="bootstrap.min.js"></script>
+    <script src="web3.min.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        let Web3 = require('web3');
+        let web3 = new Web3(new Web3.providers.HttpProvider('https://api.myetherapi.com/eth'));
+        let vendingJson = '[{"constant":true,"inputs":[],"name":"available","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"amountRaised","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"CloseVending","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"price","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"claimFunding","outputs":[],"payable":false,"type":"function"},{"inputs":[{"name":"holdingAddress","type":"address"},{"name":"token","type":"address"},{"name":"budget","type":"uint256"},{"name":"rate","type":"uint256"}],"payable":false,"type":"constructor"},{"payable":true,"type":"fallback"}]';
+        let contractABI = JSON.parse(vendingJson);
+        console.log(contractABI);
+
+        let MyContract = web3.eth.contract(contractABI);
+        let myContractInstance = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
+        let val = myContractInstance.available().toString();
+        $('#myval').html(val);
+      });
+    </script>
 </body>
 </html>
