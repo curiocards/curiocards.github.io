@@ -1,5 +1,11 @@
 <html>
 <head>
+    <b:if cond='data:blog.isMobile'>
+      <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+    <b:else/>
+      <meta content='width=1100' name='viewport'/>
+    </b:if>
+    <b:include data='blog' name='all-head-content'/>
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?kit=hzfXlbmSeIzeOBEdYZrfu7lu-aQGDDvlx28eL4sdsSpoXu0TeVWAlHJquSIDHMls" rel="stylesheet" type="text/css">
     <link href="custom.css" rel="stylesheet">
