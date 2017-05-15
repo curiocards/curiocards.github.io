@@ -12,7 +12,8 @@
 
 </head>
 
-<body>
+<body onload = "getSeconds()">
+
 <div class="container">
   <div class="row">
     <div class="col">
@@ -39,7 +40,7 @@
       <br>
       <br>
       <center>
-        <a href="https://mycuriocards.blogspot.com/#start">
+        <a href="#start">
           <img src="assets/start_collection.png">
         </a>
       </center>
@@ -257,24 +258,44 @@
   </div>
 
 
-  <div class="row">
-    <div class="col-sm-12">
-      <center>
-        <h2>Get started with Curio 1 - 10</h2>
-        <img src="assets/tencards.jpg">
-
-      </center>
-    </div>
+<div class="row">
+  <div class="col-sm-12">
+    <center>
+      <h2>Get started with Curio 1 - 10</h2>
+      <img src="assets/tencards.jpg">
+    </center>
   </div>
-  <div class="row">
-    <br><br>
-  </div>
+</div>
+<center>
+<i><b>Curio 1-10</b> were designed by crypto-artist <a href="http://phneep.com">Phneep</a><br /> exclusively for Curio Cards.  We'll be showcasing more of his work soon.
+</i>
 
-  <div class="row">
-    <br><br>
-  </div>
+<br><br>
+<a href="#start"><img src="assets/start_collection.png"></a>
+<br><br>
+<h2>New Cards Every Tuesday</h2>
 
-    
+<!-- Start of Mailing list Section -->
+<img src="assets/mail_scoop.jpg" width="300">
+Insert Mailing list widget here
+<br><br><br>
+</center>
+<!-- End of Mailing list Section -->
+
+<!-- Start of Plaid Paper Section -->
+<center>
+<br>
+<h2>Read the Plaidpaper!</h2>
+<br>
+<img border="0" src="assets/plaid_paper.jpg" width="200">
+<br>
+<font size="5">Get all the details about <br> Curio Cards in the Plaid Paper.</font>
+<h2>Coming Soon...</h2>
+<br>
+</center>
+<!-- End of Plaid Paper Section -->
+
+<!-- Start of Team Section -->
 <div class="col-sm-12">
   <center>
     <h2>The Team</h2>
@@ -287,8 +308,8 @@
       <div class="thumbnail">
         <img src="assets/tom.jpg" width="200">
         <br><br>
-        <p><a href="#"><img src="assets/twitter.jpg" width="25"></a>
-        <a href="#"><img src="assets/linkedin.jpg" width="25"></a></p>
+        <p><a href="https://twitter.com/MadBitcoins"><img src="assets/twitter.jpg" width="25"></a>
+        <a href="https://www.linkedin.com/in/thomashuntbitcoin/"><img src="assets/linkedin.jpg" width="25"></a></p>
         <div class="caption">
           <h5><b>Thomas Hunt</b> - CEO</h5>
           <font size="3">
@@ -302,8 +323,8 @@
       <div class="thumbnail">
         <img src="assets/rhett.jpg" width="200">
         <br><br>
-        <p><a href="#"><img src="assets/twitter.jpg" width="25"></a>
-        <a href="#"><img src="assets/linkedin.jpg" width="25"></a></p>
+        <p><a href="https://twitter.com/heyrhett"><img src="assets/twitter.jpg" width="25"></a>
+        <a href="https://www.linkedin.com/in/heyrhett/"><img src="assets/linkedin.jpg" width="25"></a></p>
         <div class="caption">
           <h5><b>Rhett Creighton</b> - CTO</h5>
           <font size="3">
@@ -318,8 +339,8 @@
       <div class="thumbnail">
         <img src="assets/travis.jpg" width="200">
         <br><br>
-        <p><a href="#"><img src="assets/twitter.jpg" width="25"></a>
-        <a href="#"><img src="assets/linkedin.jpg" width="25"></a></p>
+        <p><a href="https://twitter.com/travisformayor"><img src="assets/twitter.jpg" width="25"></a>
+        <a href="https://www.linkedin.com/in/travisuhrig/"><img src="assets/linkedin.jpg" width="25"></a></p>
         <div class="caption">
           <h5><b>Travis Uhrig</b> - COO</h5>
           <font size="3">
@@ -333,12 +354,99 @@
 
       </div>
 </center>
-    
+</div>
+<!-- End of Team Section -->
 
-    
+<!-- Start of Weekly Update Section -->
+
+
+
+<br><br><br>
+
+<div class="container" align="center">
+  <div class="row">
+    <div class="col-8">
+        <h2>Week 1: Curio 1 - 3</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="assets/curio_woods.jpg" width="162" align="right">
+        </div>
+        <div class="col-8">
+          <img src="assets/cards1_3.jpg" width="412" align="left">
+        </div>
+      </div>
+      Curio was wandering through the forest when he found <br>
+      an incredible bounty of <b>Apples, Nuts and Berries</b>.<br>
+      Share in his good fortune and start your Curio Card<br>
+      collection today!<br><br>
+      <a href="#start"><img src="assets/start_collection.png" width="300"></a>
+    </div>
+    <div class="col-4">
+      <br><br>
+      <div class="row">
+        <img src="assets/mystery.png" align="right">
+      </div>
+
+      <!-- Start Countdown section -->
+      <div class="row">
+        <div class="col">
+          <div class="row"><span id="count_days" style="font-size: 50;"></span></div>
+          <div class="row">days</div>
+        </div>
+        <div class="col">
+          <div class="row"><span id="count_hours" style="font-size: 50;"></span></div>
+          <div class="row">hours</div>
+        </div>
+        <div class="col">
+          <div class="row"><span id="count_minutes" style="font-size: 50;"></span></div>
+          <div class="row">minutes</div>
+        </div>
+        <div class="col">
+          <div class="row"><span id="count_seconds" style="font-size: 50; color:red"></span></div>
+          <div class="row">seconds</div>
+        </div>
+      </div>
+      <!-- End Countdown section -->
+
+
+   </div>
+  </div>
+</div>
+<!-- End of Weekly Update Section -->
+
+
+<!-- Start of Footer section -->
+<br><br><br><br><br><br>
+<footer>
+<center>
+<img src="assets/curio_footer.jpg" width="350">
+<a href="https://www.facebook.com/Mycuriocards-169308546928734/" target="_blank" >
+  <img border="0" height="100" src="assets/fb.jpg" width="100" /></a>
+<a href="https://twitter.com/MyCurioCards" target="_blank" >
+  <img border="0" height="100" src="assets/twitter.jpg" width="100" /></a>
+<a href="https://www.reddit.com/r/MyCurioCards/" target = "_blank" >
+  <img border="0" height="100" src="assets/reddit.jpg" width="100" /></a>
+<a href="https://mycuriocards.slack.com/shared_invite/MTgxMTY0MTg0NjkzLTE0OTQzNjE0OTQtMWRiMjI1ZjQxNw" target = "_blank" >
+  <img border="0" height="100" src="assets/slack.png" width="100"></a>
+<a href="https://www.youtube.com/channel/UCJKS3KsYbmjFtH0FCQjWwXg" target = "_blank" >
+  <img border="0" height="100" src="assets/youtube.jpg" width="100" /></a>
+<a href="https://t.me/CurioCards/" target = "_blank" >
+  <img border="0" height="90" src="assets/telegram.png" width="90"></a>
+</center>
+
+<br>
+<center><h3>Artists Wanted:  Do you have what it takes to design your own cards?<br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSegSdtjtWI2v4F_es1fNprsIlAnLJhTuVRGZvp7fHTUwn99tw/viewform?usp=sf_link">
+  Contact us today with samples of your work and ideas!</a></h3></center>
+<br>
+<center>&#169; Copyright 2017 | Mothership Inc.</center>
+</footer>
+<!-- End of Footer Section -->
+
+
 <!--  <div id="myval"></div> -->
 
-</div>
+
     <script src="jquery-3.2.1.min.js"></script>
     <script src="tether.min.js"></script>
     <script src="bootstrap.min.js"></script>
@@ -357,5 +465,55 @@
         $('#myval').html(val);
       });
     </script>
+
+    <!-- Start Countdown script -->
+    <script type = "text/javascript">
+    // From: http://www.codingforums.com/showthread.php?t=187335  jmrker corrected by Philip M
+    var cday;
+    var timeInSecs;
+    var ticker;
+    function getSeconds() {
+    var now = new Date();
+    var dy = 2 ; // Tuesday (day 2) - change for other days 0-6  as required
+    var countdowntime = new Date(now.getFullYear(),now.getMonth(),now.getDate(),12,0,0); //  12 hrs = 12 pm
+    // countdowntime - change time hh,mm,ss to whatever time required, e.g. 7,50,0 (0750)
+    var nowtime= now.getTime();  // time now in milliseconds
+    var atime = countdowntime.getTime();  // countdown time in milliseconds
+    var diff = parseInt((atime - nowtime)/1000);  // positive if countdowntime is in future
+    if (diff > 0) { cday = dy - now.getDay() }
+    else { cday =  dy - now.getDay() -1 }  //  already passed countdown time
+    if (cday < 0) { cday += 7; }   // aleady passed countdown time, so go for next week
+    if (diff <= 0) { diff += (86400 * 7) }  // move on one week
+    startTimer (diff);
+    }
+    function startTimer(secs) {
+    timeInSecs = parseInt(secs);
+    ticker = setInterval("tick()",1000);
+    tick(); // to start counter display right away
+    }
+    function tick() {
+    var secs = timeInSecs;
+    if (secs>0)   {
+    timeInSecs--;
+    }
+    else {
+    clearInterval(ticker); // stop counting at zero
+    getSeconds();  // and start all over again!
+     }
+
+    var days = Math.floor(secs/86400);  // redundant
+    secs %= 86400;
+    var hours= Math.floor(secs/3600);
+    secs %= 3600;
+    var mins = Math.floor(secs/60);
+    secs %= 60;
+
+    document.getElementById("count_days").innerHTML =  cday;
+    document.getElementById("count_hours").innerHTML =  ((hours < 10 ) ? "0" : "" ) + hours;
+    document.getElementById("count_minutes").innerHTML =  ((mins < 10) ? "0" : "" ) + mins;
+    document.getElementById("count_seconds").innerHTML =  ((secs < 10) ? "0" : "" ) + secs;
+    }
+    </script>
+    <!-- End Countdown script -->
 </body>
 </html>
