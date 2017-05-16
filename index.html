@@ -312,18 +312,9 @@
         </thead>
         <tr>
           <td>
-            0.0025 ETH / card <br>
-            <b><span id="myval1_1"></span> / 1,000</b><br>
-            <font size="3">0x1............</font><br>
-            <!-- <h3>SOLD OUT</h3> <br> -->
-            (EARLIEST BIRD)<br>
-          </td>
-        </tr>
-        <tr>
-          <td>
             0.0050 ETH  / card <br>
-            <b><span id="myval1_2"></span> / 1,000</b><br>
-            <font size="3">0x1.............</font><br>
+            <b><span id="myval1_1"></span> / 1,000</b><br>
+            <font size="3">0xb439fa46F991908396fDF9D8911C91C3125E42D7</font><br>
             <!-- <h3>SOLD OUT</h3> <br> -->
             (EARLY BIRD)<br>
           </td>
@@ -332,8 +323,8 @@
         <tr>
           <td>
             0.0100 ETH / card <br>
-            <b><span id="myval1_3"></span> / 50,000</b><br>
-            <font size="3">0x1............</font><br>
+            <b><span id="myval1_2"></span> / 50,000</b><br>
+            <font size="3">0x2C2a40fe840dD123200e7B22E0872A3F4aA6a2ea</font><br>
             <!-- <h3>SOLD OUT</h3> <br> -->
             (STANDARD PRICE)<br>
           </td>
@@ -357,19 +348,9 @@
         </thead>
         <tr>
           <td>
-            0.0025 ETH / card <br>
-            <b><span id="myval2_1"></span> / 1,000</b><br>
-            <font size="3">0x1............</font><br>
-            <!-- <h3>SOLD OUT</h3> <br> -->
-            (EARLIEST BIRD)<br>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
             0.0050 ETH  / card <br>
-            <b><span id="myval2_2"></span> / 1,000</b><br>
-            <font size="3">0x1............</font><br>
+            <b><span id="myval2_1"></span> / 2,000</b><br>
+            <font size="3">0xB885B6F499694c912aBA2cd9A8D524b1d8cEceE8</font><br>
             <!-- <h3>SOLD OUT</h3> <br> -->
             (EARLY BIRD)<br>
           </td>
@@ -378,8 +359,8 @@
         <tr>
           <td>
             0.0100 ETH / card <br>
-            <b><span id="myval2_3"></span> / 50,000</b><br>
-            <font size="3">0x1............</font><br>
+            <b><span id="myval2_2"></span> / 50,000</b><br>
+            <font size="3">0x5DED9Cf460Bdc8FC5E6cB58dC5682e891a6BF3af</font><br>
             <!-- <h3>SOLD OUT</h3> <br> -->
             (STANDARD PRICE)<br>
           </td>
@@ -403,19 +384,9 @@
         </thead>
         <tr>
           <td>
-            0.0025 ETH / card <br>
-            <b><span id="myval3_1"></span> / 1,000</b><br>
-            <font size="3">0x1............</font><br>
-            <!-- <h3>SOLD OUT</h3> <br> -->
-            (EARLIEST BIRD)<br>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
             0.0050 ETH  / card<br>
-            <b><span id="myval3_2"></span> / 1,000</b><br>
-            <font size="3">0x1............</font><br>
+            <b><span id="myval3_1"></span> / 2,000</b><br>
+            <font size="3">0xE060618270ff55F74a313c1D5Aa616757d21E1c6</font><br>
             <!-- <h3>SOLD OUT</h3> <br> -->
             (EARLY BIRD)<br>
           </td>
@@ -424,8 +395,8 @@
         <tr>
           <td>
             0.0100 ETH / card <br>
-            <b><span id="myval3_3"></span> / 1,000</b><br>
-            <font size="3">0x1............</font><br>
+            <b><span id="myval3_2"></span> / 50,000</b><br>
+            <font size="3">0x279021c06C9a8361D28C966dC6b08cD56c2766d0</font><br>
             <!-- <h3>SOLD OUT</h3> <br> -->
             (STANDARD PRICE)<br>
           </td>
@@ -889,36 +860,36 @@
         console.log(contractABI);
 
         let MyContract = web3.eth.contract(contractABI);
-        let myContractInstance1_1 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
-        let myContractInstance1_2 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
-        let myContractInstance1_3 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
+        let myContractInstance1_1 = MyContract.at("0xb439fa46F991908396fDF9D8911C91C3125E42D7");
+        let myContractInstance1_2 = MyContract.at("0x2C2a40fe840dD123200e7B22E0872A3F4aA6a2ea");
+        //let myContractInstance1_3 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
 
-        let myContractInstance2_1 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
-        let myContractInstance2_2 = MyContract.at("0x427660b9D5F56A067915F38bE3080DDc668276d9");
-        let myContractInstance2_3 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
+        let myContractInstance2_1 = MyContract.at("0xB885B6F499694c912aBA2cd9A8D524b1d8cEceE8");
+        let myContractInstance2_2 = MyContract.at("0x5DED9Cf460Bdc8FC5E6cB58dC5682e891a6BF3af");
+        //let myContractInstance2_3 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
 
-        let myContractInstance3_1 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
-        let myContractInstance3_2 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
-        let myContractInstance3_3 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
+        let myContractInstance3_1 = MyContract.at("0xE060618270ff55F74a313c1D5Aa616757d21E1c6");
+        let myContractInstance3_2 = MyContract.at("0x279021c06C9a8361D28C966dC6b08cD56c2766d0");
+        //let myContractInstance3_3 = MyContract.at("0xEfe7b3f041C563e90870af5BB74ae3A2AFC217c5");
 
         let val1_1 = myContractInstance1_1.available().toString();
         let val1_2 = myContractInstance1_2.available().toString();
-        let val1_3 = myContractInstance1_3.available().toString();
+        //let val1_3 = myContractInstance1_3.available().toString();
         let val2_1 = myContractInstance2_1.available().toString();
         let val2_2 = myContractInstance2_2.available().toString();
-        let val2_3 = myContractInstance2_3.available().toString();
+        //let val2_3 = myContractInstance2_3.available().toString();
         let val3_1 = myContractInstance3_1.available().toString();
         let val3_2 = myContractInstance3_2.available().toString();
-        let val3_3 = myContractInstance3_3.available().toString();
+        //let val3_3 = myContractInstance3_3.available().toString();
         $('#myval1_1').html(val1_1);
         $('#myval1_2').html(val1_2);
-        $('#myval1_3').html(val1_3);
+        //$('#myval1_3').html(val1_3);
         $('#myval2_1').html(val2_1);
         $('#myval2_2').html(val2_2);
-        $('#myval2_3').html(val2_3);
+        //$('#myval2_3').html(val2_3);
         $('#myval3_1').html(val3_1);
         $('#myval3_2').html(val3_2);
-        $('#myval3_3').html(val3_3);
+        //$('#myval3_3').html(val3_3);
       });
     </script>
     <!-- End Vending Machine number fetch script -->
