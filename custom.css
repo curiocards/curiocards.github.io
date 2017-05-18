@@ -1,17 +1,24 @@
 body {
-  font: normal normal 18px Arvo;
+  //font: normal normal 18px Arvo;
+  font: normal normal 18px Comfortaa;
   color: #666666;
   background: #ffffff none no-repeat scroll center center;
   padding: 0 0 0 0;
 }
 
 .largerfont {
-  font: normal normal 22px Arvo;
+  //font: normal normal 22px Arvo;
+  font: normal normal 22px Comfortaa;
+}
+
+.sketchfont {
+  font-family: Cabin Sketch;
 }
 
 h2 {
   margin: 0 0 1em 0;
-  font: normal bold 42px Fontdiner Swanky;
+  font: normal bold 42px Barrio;
+  //font: normal bold 42px Cabin Sketch;
   color: #000000;
 }
 
@@ -73,6 +80,9 @@ h2 {
     margin-bottom: 20px;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
+}
+.modal-footer {
+    margin: 0 auto
 }
 
 /* Mailchimp */
