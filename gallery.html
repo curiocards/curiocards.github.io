@@ -124,7 +124,7 @@
     $('#cardBalance6').html('<br><p></p>');
 
     $('input[name=ethAddress]').on('change keyup paste', function() {
-      let ethAddress = $("#ethAddress").val();
+      let ethAddress = $("#ethAddress").val().trim();
       console.log(ethAddress);
       if(web3.isAddress(ethAddress)) {
         let curioBalance1 = curioContract1.balanceOf(ethAddress).toString();
