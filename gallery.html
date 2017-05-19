@@ -1,0 +1,196 @@
+<html>
+<head>
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="custom_fonts.css" rel="stylesheet" type="text/css">
+  <link href="custom.css" rel="stylesheet">
+
+  <!-- Mailchimp -->
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+  <br><br>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <center>
+        <h1>Curio Card Gallery</h1>
+      </center>
+    </div>
+  </div>
+  <div class="row">
+  <br><br>
+  </div>
+
+  <div class="form-group row">
+    <label for="ethAddress" class="col-4 col-form-label"><b>Enter your public ETH Address</b></label>
+    <form onsubmit="return false;">
+      <input type="text" size="40" name="ethAddress" id="ethAddress" placeholder="ETH Address: 0x3f8131..." >
+    </form>
+
+  </div>
+
+
+  <div class="row">
+    <div id="cardImage1" class="col-sm-3">
+      <div id="cardBalance1">
+      </div>
+    </div>
+    <div id="cardImage2" class="col-sm-3">
+      <div id="cardBalance2">
+      </div>
+    </div>
+    <div id="cardImage3" class="col-sm-3">
+      <div id="cardBalance3">
+      </div>
+    </div>
+    <div id="cardImage4" class="col-sm-3">
+      <div id="cardBalance4">
+      </div>
+    </div>
+    <div id="cardImage5" class="col-sm-3">
+      <div id="cardBalance5">
+      </div>
+    </div>
+    <div id="cardImage6" class="col-sm-3">
+      <div id="cardBalance6">
+      </div>
+    </div>
+  </div>
+
+ </div>
+
+<style type="text/css">
+  .cardImage {
+    opacity: 0.2;
+    filter: alpha(opacity=40); /* msie */
+  }
+  .cardImageOwned {
+    opacity: 1;
+    filter: alpha(opacity=100); /* msie */
+  }
+
+</style>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="tether.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="web3.min.js"></script>
+
+
+
+<!-- Start Vending Machine number fetch script -->
+<!--  <div id="myval"></div> -->
+<script type="text/javascript">
+  $( document ).ready(function() {
+    let Web3 = require('web3');
+    let web3 = new Web3(new Web3.providers.HttpProvider('https://api.myetherapi.com/eth'));
+    let vendingJson = '[{"constant":true,"inputs":[],"name":"available","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"amountRaised","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"CloseVending","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"price","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"claimFunding","outputs":[],"payable":false,"type":"function"},{"inputs":[{"name":"holdingAddress","type":"address"},{"name":"token","type":"address"},{"name":"budget","type":"uint256"},{"name":"rate","type":"uint256"}],"payable":false,"type":"constructor"},{"payable":true,"type":"fallback"}]';
+
+    let cardJson = '[{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"standard","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balanceOf","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"description","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"target","type":"address"},{"name":"mintedAmount","type":"uint256"}],"name":"mintToken","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"ipfs_hash","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"desc","type":"string"}],"name":"setDescription","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"isLocked","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"},{"name":"_extraData","type":"bytes"}],"name":"approveAndCall","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"address"}],"name":"allowance","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"lock","outputs":[],"payable":false,"type":"function"},{"inputs":[{"name":"initialSupply","type":"uint256"},{"name":"tokenName","type":"string"},{"name":"tokenSymbol","type":"string"},{"name":"tokenDescription","type":"string"},{"name":"ipfsHash","type":"string"}],"payable":false,"type":"constructor"},{"payable":false,"type":"fallback"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Transfer","type":"event"}]';
+    let contractABI = JSON.parse(cardJson);
+
+    let MyContract = web3.eth.contract(contractABI);
+    let curioContract1 = MyContract.at("0x6Aa2044C7A0f9e2758EdAE97247B03a0D7e73d6c");
+    let curioContract2 = MyContract.at("0xE9A6A26598B05dB855483fF5eCc5f1d0C81140c8");
+    let curioContract3 = MyContract.at("0x3f8131B6E62472CEea9cb8Aa67d87425248a3702");
+    let curioContract4 = MyContract.at("0x4F1694be039e447B729ab11653304232Ae143C69");
+    let curioContract5 = MyContract.at("0x5a3D4A8575a688b53E8b270b5C1f26fd63065219");
+    let curioContract6 = MyContract.at("0x1Ca6AC0Ce771094F0F8a383D46BF3acC9a5BF27f");
+
+    let curioImage1 = curioContract1.ipfs_hash().toString();
+    let curioImage2 = curioContract2.ipfs_hash().toString();
+    let curioImage3 = curioContract3.ipfs_hash().toString();
+    let curioImage4 = curioContract4.ipfs_hash().toString();
+    let curioImage5 = curioContract5.ipfs_hash().toString();
+    let curioImage6 = curioContract6.ipfs_hash().toString();
+
+    console.log(curioImage1);
+    $('#cardImage1').prepend('<img class="cardImage" id="card1" width="200" src="https://ipfs.io/ipfs/' + curioImage1 + '">');
+    $('#cardImage2').prepend('<img class="cardImage" id="card2" width="200" src="https://ipfs.io/ipfs/' + curioImage2 + '">');
+    $('#cardImage3').prepend('<img class="cardImage" id="card3" width="200" src="https://ipfs.io/ipfs/' + curioImage3 + '">');
+    $('#cardImage4').prepend('<img class="cardImage" id="card4" width="200" src="https://ipfs.io/ipfs/' + curioImage4 + '">');
+    $('#cardImage5').prepend('<img class="cardImage" id="card5" width="200" src="https://ipfs.io/ipfs/' + curioImage5 + '">');
+    $('#cardImage6').prepend('<img class="cardImage" id="card6" width="200" src="https://ipfs.io/ipfs/' + curioImage6 + '">');
+
+    $('#cardBalance1').html('<br><p></p>');
+    $('#cardBalance2').html('<br><p></p>');
+    $('#cardBalance3').html('<br><p></p>');
+    $('#cardBalance4').html('<br><p></p>');
+    $('#cardBalance5').html('<br><p></p>');
+    $('#cardBalance6').html('<br><p></p>');
+
+    $('input[name=ethAddress]').on('change keyup paste', function() {
+      let ethAddress = $("#ethAddress").val();
+      console.log(ethAddress);
+      if(web3.isAddress(ethAddress)) {
+        let curioBalance1 = curioContract1.balanceOf(ethAddress).toString();
+        let curioBalance2 = curioContract2.balanceOf(ethAddress).toString();
+        let curioBalance3 = curioContract3.balanceOf(ethAddress).toString();
+        let curioBalance4 = curioContract4.balanceOf(ethAddress).toString();
+        let curioBalance5 = curioContract5.balanceOf(ethAddress).toString();
+        let curioBalance6 = curioContract6.balanceOf(ethAddress).toString();
+
+        console.log(curioBalance1);
+        console.log(curioBalance2);
+        console.log(curioBalance3);
+        console.log(curioBalance4);
+        console.log(curioBalance5);
+        console.log(curioBalance6);
+
+        if(parseInt(curioBalance1) > 0) {
+          $('#card1').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card1').removeClass('cardImageOwned').addClass('cardImage');
+        }
+        if(parseInt(curioBalance2) > 0) {
+          $('#card2').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card2').removeClass('cardImageOwned').addClass('cardImage');
+        }
+        if(parseInt(curioBalance3) > 0) {
+          $('#card3').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card3').removeClass('cardImageOwned').addClass('cardImage');
+        }
+        if(parseInt(curioBalance4) > 0) {
+          $('#card4').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card4').removeClass('cardImageOwned').addClass('cardImage');
+        }
+        if(parseInt(curioBalance5) > 0) {
+          $('#card5').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card5').removeClass('cardImageOwned').addClass('cardImage');
+        }
+        if(parseInt(curioBalance6) > 0) {
+          $('#card6').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card6').removeClass('cardImageOwned').addClass('cardImage');
+        }
+
+        $('#cardBalance1').html('<br><p>' + curioBalance1 + '<p>');
+        $('#cardBalance2').html('<br><p>' + curioBalance2 + '<p>');
+        $('#cardBalance3').html('<br><p>' + curioBalance3 + '<p>');
+        $('#cardBalance4').html('<br><p>' + curioBalance4 + '<p>');
+        $('#cardBalance5').html('<br><p>' + curioBalance5 + '<p>');
+        $('#cardBalance6').html('<br><p>' + curioBalance6 + '<p>');
+      } else {
+        $('.cardImageOwned').removeClass('cardImageOwned').addClass('cardImage');
+        $('#cardBalance1').html('<br><p></p>');
+        $('#cardBalance2').html('<br><p></p>');
+        $('#cardBalance3').html('<br><p></p>');
+        $('#cardBalance4').html('<br><p></p>');
+        $('#cardBalance5').html('<br><p></p>');
+        $('#cardBalance6').html('<br><p></p>');
+      }
+    });
+
+
+  });
+</script>
+</body>
+</html>
