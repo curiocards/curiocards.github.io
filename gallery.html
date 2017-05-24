@@ -59,6 +59,18 @@
       <div id="cardBalance6">
       </div>
     </div>
+    <div id="cardImage7" class="col-sm-3">
+      <div id="cardBalance7">
+      </div>
+    </div>
+    <div id="cardImage8" class="col-sm-3">
+      <div id="cardBalance8">
+      </div>
+    </div>
+    <div id="cardImage9" class="col-sm-3">
+      <div id="cardBalance9">
+      </div>
+    </div>
   </div>
 
  </div>
@@ -100,6 +112,9 @@
     let curioContract4 = MyContract.at("0x4F1694be039e447B729ab11653304232Ae143C69");
     let curioContract5 = MyContract.at("0x5a3D4A8575a688b53E8b270b5C1f26fd63065219");
     let curioContract6 = MyContract.at("0x1Ca6AC0Ce771094F0F8a383D46BF3acC9a5BF27f");
+    let curioContract7 = MyContract.at("0x2647bd8777e0C66819D74aB3479372eA690912c3");
+    let curioContract8 = MyContract.at("0x2FCE2713a561bB019BC5A110BE0A19d10581ee9e");
+    let curioContract9 = MyContract.at("0xbf4Cc966F1e726087c5C55aac374E687000d4d45");
 
     let curioImage1 = curioContract1.ipfs_hash().toString();
     let curioImage2 = curioContract2.ipfs_hash().toString();
@@ -107,6 +122,9 @@
     let curioImage4 = curioContract4.ipfs_hash().toString();
     let curioImage5 = curioContract5.ipfs_hash().toString();
     let curioImage6 = curioContract6.ipfs_hash().toString();
+    let curioImage7 = curioContract7.ipfs_hash().toString();
+    let curioImage8 = curioContract8.ipfs_hash().toString();
+    let curioImage9 = curioContract9.ipfs_hash().toString();
 
     console.log(curioImage1);
     $('#cardImage1').prepend('<img class="cardImage" id="card1" width="200" src="https://ipfs.io/ipfs/' + curioImage1 + '">');
@@ -115,6 +133,9 @@
     $('#cardImage4').prepend('<img class="cardImage" id="card4" width="200" src="https://ipfs.io/ipfs/' + curioImage4 + '">');
     $('#cardImage5').prepend('<img class="cardImage" id="card5" width="200" src="https://ipfs.io/ipfs/' + curioImage5 + '">');
     $('#cardImage6').prepend('<img class="cardImage" id="card6" width="200" src="https://ipfs.io/ipfs/' + curioImage6 + '">');
+    $('#cardImage7').prepend('<img class="cardImage" id="card7" width="200" src="https://ipfs.io/ipfs/' + curioImage7 + '">');
+    $('#cardImage8').prepend('<img class="cardImage" id="card8" width="200" src="https://ipfs.io/ipfs/' + curioImage8 + '">');
+    $('#cardImage9').prepend('<img class="cardImage" id="card9" width="200" src="https://ipfs.io/ipfs/' + curioImage9 + '">');
 
     $('#cardBalance1').html('<br><p></p>');
     $('#cardBalance2').html('<br><p></p>');
@@ -122,6 +143,9 @@
     $('#cardBalance4').html('<br><p></p>');
     $('#cardBalance5').html('<br><p></p>');
     $('#cardBalance6').html('<br><p></p>');
+    $('#cardBalance7').html('<br><p></p>');
+    $('#cardBalance8').html('<br><p></p>');
+    $('#cardBalance9').html('<br><p></p>');
 
     $('input[name=ethAddress]').on('change keyup paste', function() {
       let ethAddress = $("#ethAddress").val().trim();
@@ -133,6 +157,9 @@
         let curioBalance4 = curioContract4.balanceOf(ethAddress).toString();
         let curioBalance5 = curioContract5.balanceOf(ethAddress).toString();
         let curioBalance6 = curioContract6.balanceOf(ethAddress).toString();
+        let curioBalance7 = curioContract7.balanceOf(ethAddress).toString();
+        let curioBalance8 = curioContract8.balanceOf(ethAddress).toString();
+        let curioBalance9 = curioContract9.balanceOf(ethAddress).toString();
 
         console.log(curioBalance1);
         console.log(curioBalance2);
@@ -140,6 +167,9 @@
         console.log(curioBalance4);
         console.log(curioBalance5);
         console.log(curioBalance6);
+        console.log(curioBalance7);
+        console.log(curioBalance8);
+        console.log(curioBalance9);
 
         if(parseInt(curioBalance1) > 0) {
           $('#card1').addClass('cardImageOwned').removeClass('cardImage');
@@ -171,6 +201,21 @@
         } else {
           $('#card6').removeClass('cardImageOwned').addClass('cardImage');
         }
+        if(parseInt(curioBalance7) > 0) {
+          $('#card7').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card7').removeClass('cardImageOwned').addClass('cardImage');
+        }
+        if(parseInt(curioBalance8) > 0) {
+          $('#card8').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card8').removeClass('cardImageOwned').addClass('cardImage');
+        }
+        if(parseInt(curioBalance9) > 0) {
+          $('#card9').addClass('cardImageOwned').removeClass('cardImage');
+        } else {
+          $('#card9').removeClass('cardImageOwned').addClass('cardImage');
+        }
 
         $('#cardBalance1').html('<br><p>' + curioBalance1 + '<p>');
         $('#cardBalance2').html('<br><p>' + curioBalance2 + '<p>');
@@ -178,6 +223,10 @@
         $('#cardBalance4').html('<br><p>' + curioBalance4 + '<p>');
         $('#cardBalance5').html('<br><p>' + curioBalance5 + '<p>');
         $('#cardBalance6').html('<br><p>' + curioBalance6 + '<p>');
+        $('#cardBalance7').html('<br><p>' + curioBalance7 + '<p>');
+        $('#cardBalance8').html('<br><p>' + curioBalance8 + '<p>');
+        $('#cardBalance9').html('<br><p>' + curioBalance9 + '<p>');
+
       } else {
         $('.cardImageOwned').removeClass('cardImageOwned').addClass('cardImage');
         $('#cardBalance1').html('<br><p></p>');
@@ -186,6 +235,9 @@
         $('#cardBalance4').html('<br><p></p>');
         $('#cardBalance5').html('<br><p></p>');
         $('#cardBalance6').html('<br><p></p>');
+        $('#cardBalance7').html('<br><p></p>');
+        $('#cardBalance8').html('<br><p></p>');
+        $('#cardBalance9').html('<br><p></p>');
       }
     });
 
