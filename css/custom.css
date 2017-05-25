@@ -1,0 +1,242 @@
+body {
+  font: normal normal 18px Comfortaa;
+  color: #666666;
+  background: #ffffff none no-repeat scroll center center;
+  padding: 0 0 0 0;
+}
+#curioFooter {
+    color: white;
+}
+#curioFooter .footerTop {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(125, 185, 232, 1) 100%);
+  background-repeat: repeat;
+  border-radius:10px;
+  margin: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#curioFooter .footer-copyright {
+    padding-top: 0px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+#curioFooter .footer-copyright p {
+    margin: 10px;
+    color: #808080;
+}
+#curioFooter .row {
+    margin-bottom: 10px;
+}
+#curioFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+#curioFooter h5 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+#navlist a {
+    font-size: 19px;
+}
+
+#curioFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+#curioFooter a {
+    color: #e6e5e5;
+    text-decoration: none;
+}
+#curioFooter a:hover,
+#curioFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+#curioFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+#curioFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+#curioFooter .social-networks a:hover {
+    text-decoration: none;
+}
+#curioFooter .facebook:hover {
+    color: #0077e2;
+}
+#curioFooter .twitter:hover {
+    color: #00aced;
+}
+@media screen and (max-width: 767px) {
+    #curioFooter {
+        text-align: center;
+    }
+    #textcenter {
+        text-align: center;
+    }
+}
+
+#spotlight img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.plaidbutton {
+    background: url("../assets/plaid.png") no-repeat;
+    cursor:pointer;
+    border: none;
+    color: white;
+}
+
+
+
+#bigNav {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(125, 185, 232, 1) 100%);
+  background-repeat: repeat;
+  border-radius:10px;
+  width: 350px;
+}
+#topNav {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(125, 185, 232, 1) 100%);
+  background-repeat: repeat;
+  border-radius:10px;
+  margin: 15px;
+}
+.main-btn {
+  font: bold normal 40px Comfortaa;
+}
+#directory {
+  background-color: transparent;
+  border-radius:10px;
+  margin: 15px;
+}
+.curiocard {
+}
+
+.largerfont {
+  font: normal normal 22px Comfortaa;
+}
+
+.card_view {
+  width: 260px;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(30, 87, 153, 0.07) 0%, rgba(125, 185, 232, 0.5) 100%);
+  background-repeat: repeat;
+  border-radius:10px;
+  padding: 10px;
+  padding-top: 20px;
+  margin: 10px;
+  justify-content: center;
+}
+.card_view img {
+  width: 200px;
+}
+
+#countdown {
+  color: black;
+  font: normal normal 90px Cabin Sketch;
+}
+@media screen and (max-width: 767px) {
+    #countdown {
+        font: normal normal 60px Cabin Sketch;
+    }
+    .countdetails h1 {
+        font: normal normal 30px Comfortaa;
+    }
+}
+
+#countdown #count_seconds {
+  color: red;
+}
+
+h2 {
+  margin: 0 0 1em 0;
+  font: normal bold 55px Barrio;
+  color: #000000;
+}
+
+.table-condensed {
+  width: auto !important
+}
+
+.btn  {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.accordion-toggle {
+    color: #404040;
+}
+
+.panel {
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+
+  .panel-group .panel {
+      border-bottom: 0;
+      margin-bottom: 0;
+      border-radius: 4px;
+  }
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: inherit;
+}
+
+ .panel-default {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #e3e3e3;
+}
+
+.panel-body {
+    min-height: 20px;
+    padding: 15px;
+    background-color:white;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+.modal-footer {
+    margin: 0 auto
+}
+
+ol {
+     display: inline-block;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+/* Mailchimp */
+#mc_embed_signup  {
+  background: transparent;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:100%;
+}
