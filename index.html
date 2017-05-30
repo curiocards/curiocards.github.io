@@ -66,24 +66,6 @@
 </center>
 <div class="container-fluid">
   <div class="row">
-    <!--div class="col-lg-4">
-      <center>
-        <img src="assets/cards/thumb-7.png" width="250">
-        <br>
-        <a href="about.html#week3"><button type="button" class="btn btn-info">Info</button></a><br>
-        <b>Sculpture (#007)</b>
-        <br>
-      </center>
-    </div-->
-    <!--div class="col-lg-4">
-      <center>
-        <img src="assets/cards/thumb-8.png" width="250">
-        <br>
-        <a href="about.html#week3"><button type="button" class="btn btn-info">Info</button></a><br>
-        <b>Painting (#008)</b>
-        <br>
-      </center>
-    </div-->
     <div class="col">
       <center>
         <img src="assets/cards/thumb-10.png" width="250">
@@ -101,14 +83,17 @@
 <br><br>
 
 <center><h3><b>Card Vending Machines</b></h3></center>
+<center>
 <div class="container-fluid">
   <div class="row">
     <!-- Column 1-->
-    <div class="col-lg-4">
+    <div class="col-lg-12">
       <table class="table table-striped">
         <thead>
           <center><h3>Curio Card 10</h3>
-          <font size="2">(0x72b34d637C0d14acE58359Ef1bF472E4b4c57125)</font></center><br>
+            <!-- <font size="2">(<span id="mycard1"></span>)</font> -->
+            <font size="2">(0x72b34d637C0d14acE58359Ef1bF472E4b4c57125)</font>
+          </center><br>
         </thead>
         <tr>
           <td>
@@ -116,8 +101,9 @@
             Price <br>
             0.0025 ETH/card <br><br>
             Amount Remaining: <br>
-            <b>1,868 / 2,000</b><br><br>
+            <b><span id="myval1_1"></span> / 2,000</b><br><br>
             Vending Machine Address:<br>
+            <!-- <font size="2"><b><span id="myvend1_1"></span></b></font><br> -->
             <font size="2"><b>0x46C4723111e2bAFeF7d5d0664B3F7BC68D875DeA</b></font><br>
             <!-- <h3>SOLD OUT</h3> <br> -->
           </td>
@@ -126,8 +112,8 @@
           <td>
             (STANDARD PRICE)<br>
             0.0050 ETH/card <br>
-            <b><span id="myval1_2"></span>50,000 / 50,000</b><br>
-            <font size="2"><b><span id="myvend1_2"></b></span></font><br>
+            <b>50,000 / 50,000</b><br>
+            <font size="2"><b></b></font><br>
             <!-- <h3>SOLD OUT</h3> <br> -->
           </td>
         </tr>
@@ -139,80 +125,9 @@
         </tr>
       </table>
     </div>
-    <!-- Column 2
-    <div class="col-lg-4">
-      <table class="table table-striped">
-        <thead>
-          <center><h3>Curio Card 8</h3>
-          <font size="2">(<span id="mycard2"></span>)</font></center><br>
-        </thead>
-        <tr>
-          <td>
-            (EARLY BIRD)<br>
-            Price <br>
-            0.0025 ETH /card <br><br>
-            Amount Remaining:<br>
-            <b><span id="myval2_1"></span> / 2,000</b><br><br>
-            Vending Machine Address:<br>
-            <font size="2"><b><span id="myvend2_1"></b></span></font><br>
-            <!-- <h3>SOLD OUT</h3> <br>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            (STANDARD PRICE)<br>
-            0.0050 ETH/card <br>
-            <b><span id="myval2_2"></span>50,000 / 50,000</b><br>
-            <font size="2"><b><span id="myvend2_2"></span></b></font><br>
-            <!-- <h3>SOLD OUT</h3> <br> 
-          </td>
-        </tr>
-        <tr>
-          <td>
-            (RESERVE)<br>
-            48,000 remaining <br>
-          </td>
-        </tr>
-      </table>
-    </div> -->
-    <!-- Column 3 
-    <div class="col-lg-4">
-      <table class="table table-striped">
-        <thead>
-          <center><h3>Curio Card 9</h3>
-          <font size="2">(<span id="mycard3"></span>)</font></center><br>
-        </thead>
-        <tr>
-          <td>
-            (EARLY BIRD)<br>
-            Price <br>
-            0.0025 ETH /card<br><br>
-            Amount Remaining:<br>
-            <b><span id="myval3_1"></span> / 2,000</b><br><br>
-            Vending Machine Address:<br>
-            <font size="2"><b><span id="myvend3_1"></b></span></font><br>
-            <!-- <h3>SOLD OUT</h3> <br> 
-          </td>
-        </tr>
-        <tr>
-          <td>
-            (STANDARD PRICE)<br>
-            0.0050 ETH / card <br>
-            <b><span id="myval3_2"></span>50,000 / 50,000</b><br>
-            <font size="2"><b><span id="myvend3_2"></span></b></font><br>
-            <!-- <h3>SOLD OUT</h3> <br> 
-          </td>
-        </tr>
-        <tr>
-          <td>
-            (RESERVE)<br>
-            48,000 remaining <br>
-          </td>
-        </tr>
-      </table>
-    </div> -->
   </div>
 </div>
+</center>
 
 <center>
   <!--font color="red">All Unsold Cards are burned at the end of the week</font--><br><br><br>
