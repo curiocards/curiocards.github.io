@@ -13,22 +13,22 @@
     let card10addr   = "0x72b34d637C0d14acE58359Ef1bF472E4b4c57125";
     let card10vend1addr = "0x46C4723111e2bAFeF7d5d0664B3F7BC68D875DeA";
 
-    let card11addr   = "";
-    let card11vend1addr = "";
+    let card11addr   = "0xb36c87F1f1539c5FC6f6e7b1C632e1840C9B66b4";
+    let card11vend1addr = "0xb45e6719FDAa8f25D883bf042c4fE07b14aC8146";
 
-    let card12addr   = "";
-    let card12vend1addr = "";
+    let card12addr   = "0xD15af10A258432e7227367499E785C3532b50271";
+    let card12vend1addr = "0x105485CFBcB8acDEC209bbe1896390Be4F7c6603";
 
-    let card13addr   = "";
-    let card13vend1addr = "";
+    let card13addr   = "0x2d922712f5e99428c65b44f09Ea389373d185bB3";
+    let card13vend1addr = "0x3cF5c70AAA219031AE21dCF8618588a1BBCB058a";
 
 
     //outputs
     //vending machine quantity values output
     $('#output10vend1supply').html(MyContract.at(card10vend1addr).available().toString());
-    //$('#output11vend1supply').html(MyContract.at(card11vend1addr).available().toString());
-    //$('#output12vend1supply').html(MyContract.at(card12vend1addr).available().toString());
-    //$('#output13vend1supply').html(MyContract.at(card13vend1addr).available().toString());
+    $('#output11vend1supply').html(MyContract.at(card11vend1addr).available().toString());
+    $('#output12vend1supply').html(MyContract.at(card12vend1addr).available().toString());
+    $('#output13vend1supply').html(MyContract.at(card13vend1addr).available().toString());
 
     //card address output for site
     $('#outputcard10addr').html(card10addr);
