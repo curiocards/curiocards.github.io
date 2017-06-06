@@ -16,7 +16,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/web3.min.js"></script>
   <script src="js/countdown.js"></script>
-  <script src="js/vendnumbers.js"></script>
+  <script src="js/vending.js"></script>
 
 </head>
 <body onload = "getSeconds()">
@@ -54,89 +54,159 @@
 </section>
 <!-- End of Nav Bar -->
 
-<!-- Start of Body section -->
+<!-- Start of Vending Maching section -->
 <section id="directory" style="background-color:rgb(254,249,240);">
 <br>
-<!-- Start of Current Cards section -->
-<br><br>
+<br>
 <center>
-  <h2>Start Collecting Today</h2>
+  <h2 style="margin-bottom:0px;">Start Collecting Today</h2>
   <h3>Current Cards Available</h3>
   <br>
 </center>
-<div class="container-fluid">
+<div class="container-fluid" id="buy">
   <div class="row">
     <div class="col">
       <center>
-        <img src="assets/cards/thumb-10.png" width="250">
         <br>
-        <a href="about.html#week4"><button type="button" class="btn btn-info">Info</button></a><br>
-        <b>Future (#010)</b>
+        <h4><b>BTC Keys (#011)</b></h4>
+        <img src="assets/cards/curio11.jpg" width="250">
         <br>
+        <a href="about.html#week5"><button type="button" class="btn btn-info">News</button></a>
+        <br>
+        Card Address:<br>
+        <font size="2">(<span id="outputcard11addr"></span>)</font>
       </center>
-    </div>
-  </div>
-</div>
-<!-- End of Current Cards section -->
-
-<!-- Start of Vending Maching section -->
-<br><br>
-
-<center><h3><b>Card Vending Machines</b></h3></center>
-<center>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-4">
-    </div>
-    <!-- Column 1-->
-    <div class="col-lg-4">
-      <center>
-      <table class="table table-striped">
-        <thead>
-          <center><h3>Curio Card 10</h3>
-            <font size="2">(<span id="mycard1"></span>)</font>
-            <!-- <font size="2">(static)</font> -->
-          </center><br>
+      <br>
+      <div class="vending">
+        <table class="table table-striped">
+          <thead>
+            <center><h3><b>Card Vending Machine</b></h3></center>
         </thead>
         <tr>
           <td>
-            (EARLY BIRD)<br>
-            Price <br>
-            0.0025 ETH/card <br><br>
             Amount Remaining: <br>
-            <b><span id="myval1_1"></span> / 2,000</b><br><br>
+            <b><span id="output11vend1supply"></span> / 500</b><br><br>
+            0.0025 ETH/card <br><br>
             Vending Machine Address:<br>
-            <font size="2"><b><span id="myvend1_1"></span></b></font><br>
+            <font size="2"><b><span id="outputcard11vend1addr"></span></b></font><br>
+            <!-- <font size="2"><b>static</b></font><br> -->
+            <!-- <h3>SOLD OUT</h3> <br> -->
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="col">
+    <center>
+      <br>
+      <h4><b>Mine Bitcoin (#012)</b></h4>
+      <img src="assets/cards/curio12.jpg" width="250">
+      <br>
+      <a href="about.html#week5"><button type="button" class="btn btn-info">News</button></a>
+      <br>
+      Card Address:<br>
+      <font size="2">(<span id="outputcard12addr"></span>)</font>
+    </center>
+    <br>
+    <div class="vending">
+      <table class="table table-striped">
+        <thead>
+          <center><h3><b>Card Vending Machine</b></h3></center>
+      </thead>
+      <tr>
+        <td>
+          Amount Remaining: <br>
+          <b><span id="output12vend1supply"></span> / 1,000</b><br><br>
+          0.0025 ETH/card <br><br>
+          Vending Machine Address:<br>
+          <font size="2"><b><span id="outputcard12vend1addr"></span></b></font><br>
+          <!-- <font size="2"><b>static</b></font><br> -->
+          <!-- <h3>SOLD OUT</h3> <br> -->
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="col">
+  <center>
+    <br>
+    <h4><b>BTC (#013)</b></h4>
+    <img src="assets/cards/curio13.jpg" width="250">
+    <br>
+    <a href="about.html#week5"><button type="button" class="btn btn-info">News</button></a>
+    <br>
+    Card Address:<br>
+    <font size="2">(<span id="outputcard13addr"></span>)</font>
+  </center>
+  <br>
+  <div class="vending">
+    <table class="table table-striped">
+      <thead>
+        <center><h3><b>Card Vending Machine</b></h3></center>
+    </thead>
+    <tr>
+      <td>
+        Amount Remaining: <br>
+        <b><span id="output13vend1supply"></span> / 1,000</b><br><br>
+        0.0025 ETH/card <br><br>
+        Vending Machine Address:<br>
+        <font size="2"><b><span id="outputcard13vend1addr"></span></b></font><br>
+        <!-- <font size="2"><b>static</b></font><br> -->
+        <!-- <h3>SOLD OUT</h3> <br> -->
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+ </div>
+ <br>
+  <div class="row">
+    <div class="col">
+      <center>
+        <br>
+        <h4><b>Future (#010)</b></h4>
+        <img src="assets/cards/thumb-10.png" width="250">
+        <br>
+        Card Address:<br>
+        <font size="2">(<span id="outputcard10addr"></span>)</font>
+      </center>
+      <br>
+      <div class="vending">
+        <table class="table table-striped">
+          <thead>
+            <center><h3><b>Card Vending Machine</b></h3></center>
+        </thead>
+        <tr>
+          <td>
+            Amount Remaining: <br>
+            <b><span id="output10vend1supply"></span> / 2,000</b><br><br>
+            0.0025 ETH/card <br><br>
+            Vending Machine Address:<br>
+            <font size="2"><b><span id="outputcard10vend1addr"></span></b></font><br>
             <!-- <font size="2"><b>static</b></font><br> -->
             <!-- <h3>SOLD OUT</h3> <br> -->
           </td>
         </tr>
         <tr>
           <td>
-            (STANDARD PRICE)<br>
-            0.0050 ETH/card <br>
-            <b>50,000 / 50,000</b><br>
-            <font size="2"><b></b></font><br>
-            <!-- <h3>SOLD OUT</h3> <br> -->
-          </td>
-        </tr>
-        <tr>
-          <td>
-            (RESERVE)<br>
-            48,000 remaining <br>
+            (Reserve)<br>
+            98,000 remaining <br>
           </td>
         </tr>
       </table>
-      </center>
-    </div>
-    <div class="col-lg-4">
     </div>
   </div>
+ </div>
 </div>
-</center>
 
+<br>
+</section>
+<!-- End of Vending Machine section -->
+
+<!-- Start of How to buy section -->
+<section id="directory" style="background-color:rgb(254,249,240);">
+  <br>
 <center>
-  <!--font color="red">All Unsold Cards are burned at the end of the week</font--><br><br><br>
   <h3>How to Buy</h3>
 </center>
 
@@ -150,7 +220,7 @@
             like <a href="https://www.myetherwallet.com/" target="_blank">myetherwallet</a>)</b> to
             one of the vending machine addresses.</li><br>
             <li>View your new cards in the <a href="gallery.html" target="_blank">Gallery</a>.</li><br>
-            <li>Add the custom token to your MyEtherWallet account to manage your cards. 
+            <li>Add the custom token to your MyEtherWallet account to manage your cards.
               Learn how in the <a href="about.html#faq" target="_blank">FAQ</a></li><br>
             <li>Check out the <a href="trade.html" target="_blank">Curio Marketplace</a> to trade your cards.</li>
           </ol>
@@ -163,11 +233,10 @@
   <center>
     <b>Check out the <a href="about.html#faq" target="_blank">FAQs</a> for more detailed instructions</b>
   </center>
-<!-- End of Vending Machine section -->
 
 <br>
 </section>
-<!-- End of Body section -->
+<!-- End of How to buy section -->
 
 <!-- Start Countdown section -->
 <center>
@@ -185,145 +254,52 @@
 </center>
 <!-- End Countdown section -->
 
-<!-- Start of Directory section -->
-<section id="directory" style="background-color:rgb(254,249,240);">
-  <br>
-  <center>
-    <h1>Catalogue</h1>
-    <h3>Directory of Cards in Set 1</h3>
-  </center>
-<!-- update total supply numbers to be automatic.
-https://ethplorer.io/address/0x3cc44273a97e8fbfbcbd3d60200cc9fd33d84d66#pageSize=100
-"Total Out" -->
-<center>
-  <div class="container-fluid">
-    <div class ="row">
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-1.png">
-          <br><br>
-          Curio Card #1 - Apples<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>1,809</b><br>
-          <a href="about.html#week1"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-2.png">
-          <br><br>
-          Curio Card #2 - Nuts<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>1,630</b><br>
-          <a href="about.html#week1"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-3.png">
-          <br><br>
-          Curio Card #3 - Berries<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>1,584</b><br>
-          <a href="about.html#week1"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-4.png">
-          <br><br>
-          Curio Card #4 - Clay<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>460</b><br>
-          <a href="about.html#week2"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-5.png">
-          <br><br>
-          Curio Card #5 - Paint<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>438</b><br>
-          <a href="about.html#week2"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-6.png">
-          <br><br>
-          Curio Card #6 - Ink<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>438</b><br>
-          <a href="about.html#week2"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-7.png">
-          <br><br>
-          Curio Card #7 - Sculpture<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>212</b><br>
-          <a href="about.html#week3"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-8.png">
-          <br><br>
-          Curio Card #8 - Painting<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>253</b><br>
-          <a href="about.html#week3"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-9.png">
-          <br><br>
-          Curio Card #9 - Book<br>
-          <font color="red">Out Of Print</font><br>
-          Total Supply: <b>253</b><br>
-          <a href="about.html#week3"><button type="button" class="btn btn-info">Info</button></a> <!--Link to artist spotlight -->
-          <button type="button" class="btn btn-disabled">Buy</button>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card_view">
-          <img src="assets/cards/thumb-10.png">
-          <br><br>
-          Curio Card #10 - Future<br>
-          <font color="blue">Available Now</font><br>
-          Total Supply: <b></b><br>
-          <a href="about.html#week4"><button type="button" class="btn btn-info">Info</button></a>
-          <a href="index.html"><button type="button" class="btn btn-warning">Buy</button></a>
-          <a href="trade.html"><button type="button" class="btn btn-success">Trade</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</center>
+<!-- Start of Artist list section -->
 <br>
+<section id="directory" style="background-color:rgb(254,249,240);">
+    <center>
+      <br><br>
+      <h2>Artists</h2>
+
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-6" id="spotlight">
+          <img src="assets/bankweek.png"><br>
+        </div>
+        <div class="col-md-6">
+          <br><h1 style="margin-bottom:0px;">Cryptograffiti</h1>
+          <h4>
+            <i>
+              <a href="http://www.cryptograffiti.com/">cryptograffiti.com</a><br>
+              <!--See all of their cards on their artist page-->
+              Cards avalibile now!
+            </i>
+          </h4>
+          <a href="index.html#buy"><button type="button" class="btn-lg btn-warning"><b>Collect Now</b></button></a>
+        </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-md-6" id="spotlight">
+            <img src="assets/tencards.jpg"><br>
+          </div>
+          <div class="col-md-6">
+            <br><h1 style="margin-bottom:0px;">Phneep</h1>
+            <h4>
+              <i>
+                <a href="http://phneep.com">phneep.com</a><br>
+                See all of their cards on their artist page
+              </i>
+            </h4>
+            <a href="phneep.html"><button type="button" class="btn-lg btn-warning"><b>Phneep Artist Page</b></button></a>
+          </div>
+        </div>
+
+    </div>
+    </center>
+<br><br>
 </section>
-<!-- End of Directory section -->
+<!-- End of Artist section -->
 
 <!-- Start of mailing list section -->
 <center>
