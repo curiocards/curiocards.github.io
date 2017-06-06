@@ -92,6 +92,19 @@ body {
   object-fit: contain;
 }
 
+#fullwidth img {
+  height: 100%;
+  width: 100%;
+  max-height: 175px;
+  object-fit: contain;
+}
+
+.vending table{
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 355px;
+}
+
 .plaidbutton {
     background: url("../assets/plaid.png") no-repeat;
     cursor:pointer;
