@@ -143,6 +143,11 @@ body {
   font: normal normal 22px Comfortaa;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 .card_view {
   width: 260px;
   background-color: transparent;
