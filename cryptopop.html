@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curio Cards - The Future of Collectibles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=.5">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom_fonts.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/mailchimp.css" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/cryptopop_vend.js"></script>
+
+</head>
+<body onload = "getSeconds()">
+<section style="background-color:rgb(174,232,251);">
+
+  <!-- Start of Top section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <br>
+        <center>
+        <h2 style="margin-bottom:10px;">Curio Cards</h2>
+        <div class="curiocard">
+          <img src="assets/cards/thumb-curio.png" width="200">
+        </div>
+        <br>
+        <b>Curio Cards - The Future of Collectibles</b>
+        <br>
+        <b><a href="https://curiowallet.com" target="_blank">curiowallet.com</a></b>
+      </center>
+      </div>
+    </div>
+  </div>
+  <!-- End of Top section -->
+
+<!-- Start of Nav Bar -->
+<section id="topNav" style="background-color:rgb(0,188,209);">
+  <nav class="navbar navbar-default">
+    <center>
+      <a href="index.html"><button type="button" class="btn btn-warning main-btn">BUY</button></a>
+      <a href="trade.html"><button type="button" class="btn btn-success main-btn">TRADE</button></a>
+      <a href="earn.html"><button type="button" class="btn btn-primary main-btn">EARN</button></a>
+      <a href="about.html"><button type="button" class="btn btn-danger main-btn">ABOUT</button></a>
+    </center>
+  </nav>
+</section>
+<!-- End of Nav Bar -->
+
+<!-- Start of Vending Maching section -->
+<section id="directory" style="background-color:rgb(254,249,240);">
+<br>
+<br>
+
+<center>
+  <h1>Cryptopop Catalogue</h1>
+  <h3>Directory of Cards</h3>
+</center>
+
+<center>
+  <br>
+  <h3><b>All proceeds from the sale of cards 17-19 go directly to the artist,
+    <a href="https://twitter.com/helloluis" target="_blank">@helloluis</a>
+  <br>
+  <a href="https://cryptopop.net" target="_blank">Cryptopop.net</a>
+
+</center>
+<div class="container-fluid" id="buy">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-centered">
+      <center>
+        <br>
+        <h4><b>UASF (#017)</b></h4>
+        <img src="assets/cards/curio17.jpg" width="250">
+        <br>
+        <a href="about.html#week7"><button type="button" class="btn btn-info">News</button></a>
+        <br>
+        Card Address:<br>
+        <font size="2">(<span id="outputcard17addr"></span>)</font>
+      </center>
+      <br>
+      <div class="vending">
+        <table class="table table-striped">
+          <thead>
+            <center><h3><b>Card Vending Machine</b></h3></center>
+        </thead>
+        <tr>
+          <td>
+            Amount Available: <br>
+            <b><span id="output17vend1supply"></span> / 500</b><br><br>
+            0.0025 ETH/card <br><br>
+            Vending Machine Address:<br>
+            <font size="2"><b><span id="outputcard17vend1addr"></span></b></font><br>
+            <!-- <font size="2"><b>static</b></font><br> -->
+            <!-- <h3>SOLD OUT</h3> <br> -->
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-centered">
+    <center>
+      <br>
+      <h4><b>To The Moon (#018)</b></h4>
+      <img src="assets/cards/curio18.jpg" width="250">
+      <br>
+      <a href="about.html#week7"><button type="button" class="btn btn-info">News</button></a>
+      <br>
+      Card Address:<br>
+      <font size="2">(<span id="outputcard18addr"></span>)</font>
+    </center>
+    <br>
+    <div class="vending">
+      <table class="table table-striped">
+        <thead>
+          <center><h3><b>Card Vending Machine</b></h3></center>
+      </thead>
+      <tr>
+        <td>
+          Amount Available: <br>
+          <b><span id="output18vend1supply"></span> / 500</b><br><br>
+          0.0025 ETH/card <br><br>
+          Vending Machine Address:<br>
+          <font size="2"><b><span id="outputcard18vend1addr"></span></b></font><br>
+          <!-- <font size="2"><b>static</b></font><br> -->
+          <!-- <h3>SOLD OUT</h3> <br> -->
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 col-centered">
+  <center>
+    <br>
+    <h4><b>Dogs Trading (#019)</b></h4>
+    <img src="assets/cards/curio19.jpg" width="250">
+    <br>
+    <a href="about.html#week7"><button type="button" class="btn btn-info">News</button></a>
+    <br>
+    Card Address:<br>
+    <font size="2">(<span id="outputcard19addr"></span>)</font>
+  </center>
+  <br>
+  <div class="vending">
+    <table class="table table-striped">
+      <thead>
+        <center><h3><b>Card Vending Machine</b></h3></center>
+    </thead>
+    <tr>
+      <td>
+        Amount Available: <br>
+        <b><span id="output19vend1supply"></span> / 500</b><br><br>
+        0.0025 ETH/card <br><br>
+        Vending Machine Address:<br>
+        <font size="2"><b><span id="outputcard19vend1addr"></span></b></font><br>
+        <!-- <font size="2"><b>static</b></font><br> -->
+        <!-- <h3>SOLD OUT</h3> <br> -->
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+ </div>
+ <br>
+</div>
+<br>
+</section>
+<!-- End of Vending Machine section -->
+
+<!-- Start of Footer section -->
+  <footer id="curioFooter">
+    <section class="footerTop" style="background-color:rgb(0,188,209);">
+      <br>
+      <center>
+        <h4>Artists Wanted:  Do you have what it takes to design your own cards?<br><b>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSegSdtjtWI2v4F_es1fNprsIlAnLJhTuVRGZvp7fHTUwn99tw/viewform?usp=sf_link">
+            Click Here </a> to tell us your idea and send samples of your work!</b>
+        </h4>
+      </center>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <br><br>
+            <h2 class="logo"><a href="#"> CURIO CARDS </a></h2>
+          </div>
+          <div id="navlist" class="col-sm-2">
+            <a href="index.html"><h5>Get Cards</h5></a>
+            <ul>
+              <li><a href="index.html">Buy</a></li>
+              <li><a href="trade.html">Trade</a></li>
+              <li><a href="earn.html">Earn</a></li>
+              <li><a href="index.html#artist">The Artists</a></li>
+            </ul>
+          </div>
+          <div id="navlist" class="col-sm-3">
+            <a href="about.html"><h5>About</h5></a>
+            <ul>
+              <li><a href="about.html#what">What are Curio Cards?</a></li>
+              <li><a href="about.html#faq">FAQs</a></li>
+              <!-- <li><a href="#">The Curio Blog</a></li> -->
+              <li><a href="about.html#team">The Team</a></li>
+              <li><a href="earn.html">Join Us</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <div class="social-networks">
+              <a href="https://t.me/CurioCards/" target="_blank"><img src="assets/telegram.png" width="35px"></a>
+              <a href="https://www.youtube.com/channel/UCJKS3KsYbmjFtH0FCQjWwXg" target="_blank"><img src="assets/youtube.png" width="35px"></a>
+              <a href="https://twitter.com/MyCurioCards" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://mycuriocards.slack.com/shared_invite/MTgxMTY0MTg0NjkzLTE0OTQzNjE0OTQtMWRiMjI1ZjQxNw" class="slack" target="_blank"><i class="fa fa-slack"></i></a>
+              <a href="https://www.facebook.com/Mycuriocards-169308546928734/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+
+            </div>
+            <center>
+              <!--button type="button" class="btn btn-danger">Join Us on Telegram</button-->
+            </center>
+          </div>
+        </div>
+      </div>
+  </section>
+  <div class="footer-copyright">
+    <p>&#169; Copyright 2017 | Mothership Inc.</p>
+  </div>
+  </footer>
+  <!-- End of Footer Section -->
+
+</section> <!-- end of main background -->
+<!--End of site content -->
+
+</body>
+</html>
