@@ -40,5 +40,4 @@
 
     $('#outputcard23addr').html(card23addr);
     $('#outputcard23vend1addr').html(card23vend1addr);
-
   });
