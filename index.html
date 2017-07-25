@@ -17,6 +17,7 @@
   <script src="js/web3.min.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/vending.js"></script>
+  <script src="js/cryptograffiti_vend.js"></script>
 
 </head>
 <body onload = "getSeconds()">
@@ -74,13 +75,19 @@
 <br>
 <center>
   <h2 style="margin-bottom:0px;">Start Collecting Today</h2>
-  <h3>Current Cards Available</h3>
-  <iframe src="https://vid.me/e/3Pw6S?stats=1" width="600" height="450" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no"></iframe>
+  <h3>Featured Cards</h3>
+    <br>
+    <h3><b>All proceeds from the sale of cards 11-13 go directly to the artist,
+      <a href="https://twitter.com/cryptograffiti" target="_blank">@cryptograffiti</a>
+    <br>
+    <a href="http://www.cryptograffiti.com/" target="_blank">cryptograffiti.com</a>
+
+  <!-- <iframe src="https://vid.me/e/3Pw6S?stats=1" width="600" height="450" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no"></iframe>
   <br><br>
   <h3><b>All proceeds from the sale of cards 21-23 go directly to the artist,
     <a href="https://twitter.com/robek_world" target="_blank">@robek_world</a>
   <br>
-  <a href="https://robek.world/" target="_blank">https://robek.world/</a>
+  <a href="https://robek.world/" target="_blank">https://robek.world/</a> -->
 
 </center>
 <div class="container-fluid" id="buy">
@@ -88,13 +95,13 @@
     <div class="col-lg-4 col-md-6 col-centered">
       <center>
         <br>
-        <h4><b>The Wizard (#021)</b></h4>
-        <img src="assets/cards/curio21.png" width="250">
+        <h4><b>BTC Keys (#011)</b></h4>
+        <img src="assets/cards/curio11.jpg" width="250">
         <br>
-        <a href="about.html#week"><button type="button" class="btn btn-info">News</button></a>
+        <a href="about.html#week5"><button type="button" class="btn btn-info">News</button></a>
         <br>
         Card Address:<br>
-        <font size="2">(<span id="outputcard21addr"></span>)</font>
+        <font size="2">(<span id="outputcard11addr"></span>)</font>
       </center>
       <br>
       <div class="vending">
@@ -105,11 +112,11 @@
         <tr>
           <td>
             Amount Available: <br>
-            <b><span id="output21vend1supply"></span> / 500</b><br><br>
+            <b><span id="output11vend1supply"></span> / 2000</b><br><br>
             0.0025 ETH/card <br><br>
             Vending Machine Address:<br>
-            <!-- <font size="2"><b><span id="outputcard21vend1addr"></span></b></font><br> -->
-            <br><h3><b>SOLD OUT</b></h3>
+            <font size="2"><b><span id="outputcard11vend1addr"></span></b></font><br>
+            <!-- <br><h3><b>SOLD OUT</b></h3> -->
           </td>
         </tr>
       </table>
@@ -118,13 +125,13 @@
   <div class="col-lg-4 col-md-6 col-centered">
     <center>
       <br>
-      <h4><b>The Bard (#022)</b></h4>
-      <img src="assets/cards/curio22.png" width="250">
+      <h4><b>Mine Bitcoin (#012)</b></h4>
+      <img src="assets/cards/curio12.jpg" width="250">
       <br>
-      <a href="about.html#week"><button type="button" class="btn btn-info">News</button></a>
+      <a href="about.html#week5"><button type="button" class="btn btn-info">News</button></a>
       <br>
       Card Address:<br>
-      <font size="2">(<span id="outputcard22addr"></span>)</font>
+      <font size="2">(<span id="outputcard12addr"></span>)</font>
     </center>
     <br>
     <div class="vending">
@@ -135,11 +142,11 @@
       <tr>
         <td>
           Amount Available: <br>
-          <b><span id="output22vend1supply"></span> / 500</b><br><br>
+          <b><span id="output12vend1supply"></span> / 2000</b><br><br>
           0.0025 ETH/card <br><br>
           Vending Machine Address:<br>
-          <!-- <font size="2"><b><span id="outputcard22vend1addr"></span></b></font><br> -->
-          <br><h3><b>SOLD OUT</b></h3>
+          <font size="2"><b><span id="outputcard12vend1addr"></span></b></font><br>
+          <!-- <br><h3><b>SOLD OUT</b></h3> -->
         </td>
       </tr>
     </table>
@@ -148,13 +155,13 @@
 <div class="col-lg-4 col-md-6 col-centered">
   <center>
     <br>
-    <h4><b>The Barbarian (#023)</b></h4>
-    <img src="assets/cards/curio23.gif" width="250">
+    <h4><b>BTC (#013)</b></h4>
+    <img src="assets/cards/curio13.jpg" width="250">
     <br>
-    <a href="about.html#week"><button type="button" class="btn btn-info">News</button></a>
+    <a href="about.html#week5"><button type="button" class="btn btn-info">News</button></a>
     <br>
     Card Address:<br>
-    <font size="2">(<span id="outputcard23addr"></span>)</font>
+    <font size="2">(<span id="outputcard13addr"></span>)</font>
   </center>
   <br>
   <div class="vending">
@@ -165,11 +172,11 @@
     <tr>
       <td>
         Amount Available: <br>
-        <b><span id="output23vend1supply"></span> / 250</b><br><br>
+        <b><span id="output13vend1supply"></span> / 2000</b><br><br>
         0.0025 ETH/card <br><br>
         Vending Machine Address:<br>
-        <!-- <font size="2"><b><span id="outputcard23vend1addr"></span></b></font><br> -->
-        <br><h3><b>SOLD OUT</b></h3>
+        <font size="2"><b><span id="outputcard13vend1addr"></span></b></font><br>
+        <!-- <br><h3><b>SOLD OUT</b></h3> -->
       </td>
     </tr>
   </table>
