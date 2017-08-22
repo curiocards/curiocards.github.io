@@ -13,32 +13,20 @@
     let card10addr   = "0x72b34d637C0d14acE58359Ef1bF472E4b4c57125";
     let card10vend1addr = "0x46C4723111e2bAFeF7d5d0664B3F7BC68D875DeA";
 
-    let card27addr   = "0xfb9f3fa2502d01d43167a0a6e80be03171df407e";
-    let card27vend1addr = "0x87767E3aa2479b3faF5FbbB7C7C6874E9e3aB14e";
-    let card28addr   = "0x59D190e8A2583C67E62eEc8dA5EA7f050d8BF27e";
-    let card28vend1addr = "0x3273eF350E9ffC8f33eA80971650c7c627B43120";
-    let card29addr   = "0xD3540bCD9c2819771F9D765Edc189cBD915FEAbd";
-    let card29vend1addr = "0x39B058eC8B2fa19Cec655A87EaC127Ba434111b1";
+    //let card30addr   = "";
+    //let card30vend1addr = "";
 
     //outputs
     //vending machine quantity values output
     $('#output10vend1supply').html(MyContract.at(card10vend1addr).available().toString());
 
-    $('#output27vend1supply').html(MyContract.at(card27vend1addr).available().toString());
-    $('#output28vend1supply').html(MyContract.at(card28vend1addr).available().toString());
-    $('#output29vend1supply').html(MyContract.at(card29vend1addr).available().toString());
+    //$('#output30vend1supply').html(MyContract.at(card30vend1addr).available().toString());
 
     //card address output for site
     $('#outputcard10addr').html(card10addr);
     $('#outputcard10vend1addr').html(card10vend1addr);
 
-    $('#outputcard27addr').html(card27addr);
-    $('#outputcard27vend1addr').html(card27vend1addr);
-
-    $('#outputcard28addr').html(card28addr);
-    $('#outputcard28vend1addr').html(card28vend1addr);
-
-    $('#outputcard29addr').html(card29addr);
-    $('#outputcard29vend1addr').html(card29vend1addr);
+    //$('#outputcard30addr').html(card30addr);
+    //$('#outputcard30vend1addr').html(card30vend1addr);
 
   });
