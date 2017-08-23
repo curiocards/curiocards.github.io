@@ -14,19 +14,19 @@
     let card10vend1addr = "0x46C4723111e2bAFeF7d5d0664B3F7BC68D875DeA";
 
     //let card30addr   = "";
-    //let card30vend1addr = "";
+    let card30vend1addr = "0x338C6fbcEff5433412382590a7de6da03Bb57389";
 
     //outputs
     //vending machine quantity values output
     $('#output10vend1supply').html(MyContract.at(card10vend1addr).available().toString());
 
-    //$('#output30vend1supply').html(MyContract.at(card30vend1addr).available().toString());
+    $('#output30vend1supply').html(MyContract.at(card30vend1addr).available().toString());
 
     //card address output for site
     $('#outputcard10addr').html(card10addr);
     $('#outputcard10vend1addr').html(card10vend1addr);
 
     //$('#outputcard30addr').html(card30addr);
-    //$('#outputcard30vend1addr').html(card30vend1addr);
+    $('#outputcard30vend1addr').html(card30vend1addr);
 
   });
