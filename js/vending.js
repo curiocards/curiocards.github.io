@@ -13,7 +13,7 @@
     let card10addr   = "0x72b34d637C0d14acE58359Ef1bF472E4b4c57125";
     let card10vend1addr = "0x46C4723111e2bAFeF7d5d0664B3F7BC68D875DeA";
 
-    //let card30addr   = "";
+    let card30addr   = "0x7f5b230dc580d1e67df6ed30dee82684dd113d1f";
     let card30vend1addr = "0x338C6fbcEff5433412382590a7de6da03Bb57389";
 
     //outputs
@@ -26,7 +26,7 @@
     $('#outputcard10addr').html(card10addr);
     $('#outputcard10vend1addr').html(card10vend1addr);
 
-    //$('#outputcard30addr').html(card30addr);
+    $('#outputcard30addr').html(card30addr);
     $('#outputcard30vend1addr').html(card30vend1addr);
 
   });
