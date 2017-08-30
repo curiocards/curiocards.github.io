@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curio Cards</title>
+  <!-- Rubik font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i">
+  <!-- Normalize css -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+  <!-- Bootstrap 4 css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- FlipClock css -->
+  <link rel="stylesheet" href="lib/flipclock/flipclock.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar" class="page-navbar navbar navbar-inverse navbar-toggleable-md fixed-top px-sm-3">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+      <img class="logo-top" src="img/logo-top.svg" alt="logo">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#main-section">Cards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#about-the-artist">Artist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#how-to-buy">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="trade.html">Trade</a>
+        </li>
+        <li class="nav-item bordered-item">
+          <a class="nav-link text-uppercase" href="https://mycuriowallet.com" target="_blank">My Curio Wallet</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="main-section" class="main-section">
+    <div class="text-center time-left-info">
+    <div class="down-section-info text-center">
+      </div>
+    </div>
+  </section>
+
+  <section id="cards-available" class="current-cards-available px-2 px-sm-5">
+    <div class="heading">
+      <div class="current-cards-available-left-line">
+        <div class="current-cards-available-horizontal-line"></div>
+      </div>
+      <div class="current-cards-available-right-line">
+        <div class="current-cards-available-horizontal-line"></div>
+      </div>
+      <h2 class="current-cards-available-title text-uppercase text-center">##</h2>
+    </div>
+
+
+
+    <div class="text-center body-content">
+      <h3>100% of sales for the following cards go directly to the artist</h3>
+      <br>
+    </div>
+
+    <div class="cards-wrapper">
+      <div class="row cards-container">
+
+        <div class="col-12 col-lg-6 card-item mx-auto">
+          <div class="card-image-holder">
+            <a href="#">
+              <img class="card-image" src="img/##" alt="Curio Card ##">
+            </a>
+          </div>
+          <div class="text-center down-arrow-grey">
+            <!-- click this link will scrool to div#card-1 -->
+            <a href="#card-1">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div id="card-3" class="card-details">
+            <div class="item-label card-address-item">
+              <img class="bigger-icon" src="img/ethereum-logo.svg" alt="address">
+              <span>Card Address:</span>
+            </div>
+            <div class="card-address">
+              <span id="outputcard##addr">loading...</span>
+            </div>
+            <div class="item-label amount-item mb-3">
+              <img src="img/price-tag.svg" alt="price">
+              <span>Amount Available:</span>
+              <p><em id="output##vend1supply">loading...</em> / ##</p>
+              <p>0.0025 ETH/card</p>
+            </div>
+            <div class="item-label vm-address-item">
+              <img src="img/shopping-cart.svg" alt="shopping-cart">
+              <span>VM Address:</span>
+            </div>
+            <div class="vm-address">
+              <span id="outputcard##vend1addr">loading...</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about-the-artist">
+
+  <section id="about-the-artist" class="current-cards-available px-2 px-sm-5">
+    <div class="heading">
+      <div class="current-cards-available-left-line">
+        <div class="current-cards-available-horizontal-line"></div>
+      </div>
+      <div class="current-cards-available-right-line">
+        <div class="current-cards-available-horizontal-line"></div>
+      </div>
+      <h2 class="current-cards-available-title text-uppercase text-center">About The Artist</h2>
+    </div>
+  </section>
+
+  <div class="text-center body-content">
+    <h1>Week of ##: ##</h1>
+  </div>
+
+    <div class="video-section">
+      <iframe width="70%" height="350px" src="https://www.youtube.com/embed/##"></iframe>
+    </div>
+
+    <div class="text-center body-content">
+      <h3>
+        <a href="##" target="_blank">##</a>
+        <br>
+        <a href="##" target="_blank">##</a>
+        <br><br>
+        We are excited to have the work of <b>##</b> this week.
+
+        <br><br>
+        "##"
+        <br><br>
+      </h3>
+    </div>
+
+    <div class="main-info-section px-2 px-sm-5">
+      <div id="how-to-buy" class="how-to-buy">
+        <div class="inner-heading">
+          <div class="line-left">
+            <div class="heading-horizontal-line"></div>
+          </div>
+          <div class="line-right">
+            <div class="heading-horizontal-line"></div>
+          </div>
+          <h3 class="line-text text-uppercase text-center how-to-buy-title">How to buy</h3>
+        </div>
+
+        <div class="container steps-container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 px-4 px-lg-5 text-center">
+              <div class="img-holder step-3">
+                <img src="img/step3.svg" alt="step 3">
+              </div>
+              <p class="text-center">
+                <b>1.</b>
+                <span>Create and use your <a href="https://mycuriowallet.com" target="_blank">CurioWallet</a> account to manage your cards.</span>
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-4 px-4 px-lg-5 text-center">
+              <div class="img-holder step-1">
+                <img src="img/step1.svg" alt="step 1">
+              </div>
+              <p class="text-center">
+                <b>2.</b>
+                <span>Send ethereum from your <a href="https://mycuriowallet.com" target="_blank">CurioWallet</a> to one of the vending machine addresses.</span>
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-4 px-4 px-lg-5 text-center">
+              <div class="img-holder step-2">
+                <img src="img/step2.svg" alt="step 2">
+              </div>
+              <p class="text-center">
+                <b>3.</b>
+                <span>View your new cards in the <a href="gallery.html" target="_blank">Gallery</a> and your <a href="https://mycuriowallet.com" target="_blank">CurioWallet</a>.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-center custom-text">
+          <a href="trade.html">Check out the Curio Marketplace to trade your cards.</a>
+        </h4>
+
+        <!-- Start of FAQ section -->
+        <div class="inner-heading">
+          <h3 class="text-uppercase text-center">Frequently Asked Questions</h3>
+        </div>
+        <center>
+            <div class="container ">
+                <div class="panel-group" id="faqAccordion">
+                  <div class="panel panel-default ">
+                      <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                           <h4 class="panel-title">
+                              <a href="#" class="ing">Q: What is Curio Cards?</a>
+                        </h4>
+
+                      </div>
+                      <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                          <div class="panel-body">
+                               <h5><span class="label label-primary">Answer</span></h5>
+                               <p>
+                                 Curio Card's mission is to create a platform for artists and collectors that finally benefits artists.
+                                 Until now it's not been possible to sell digital artwork without massive fees, theft, or restrictive DRM.
+                                 <br>
+                                 <b>Curio is changing that.</b>
+                                 <br><br>
+                                 Now you can own rare and collectible digital artwork, and interact with it in amazing new ways, all built on proven blockchain technology.
+                                 <br><br>
+                                 We encourage you to join our Telegram room to keep uptodate, share your ideas, and meet the Curio community.
+                                 <br>
+                                 <center>
+                                 <a href="https://t.me/joinchat/AAAAAEMPisods1gbQv5iGQ" target="_blank">
+                                   <img src="img/telegram.svg" width="100">
+                                   <br>Click Here to Join!
+                                 </a>
+                               </center>
+                               </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default ">
+                      <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                           <h4 class="panel-title">
+                              <a href="#" class="ing">Q: I'm an artist, how can I make my own cards?</a>
+                        </h4>
+
+                      </div>
+                      <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                          <div class="panel-body">
+                               <h5><span class="label label-primary">Answer</span></h5>
+
+                              <p>
+                                Welcome to Curio Cards, we are thrilled you found this project. We are featuring select artists currently,
+                                with plans to massively open up the platform to everyone as we scale up.
+                                <br><br>
+                                Please let us know about your work and your interest by filling out the following form
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSegSdtjtWI2v4F_es1fNprsIlAnLJhTuVRGZvp7fHTUwn99tw/viewform?usp=sf_link" target="_blank">
+                                <b>Here</b></a>, and joining our Telegram room to let us know about yourself.
+                                <br><br>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default ">
+                      <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+                           <h4 class="panel-title">
+                              <a href="#" class="ing">Q: How can I get sold out cards? What does it mean to own a sold out card?</a>
+                        </h4>
+
+                      </div>
+                      <div id="question2" class="panel-collapse collapse" style="height: 0px;">
+                          <div class="panel-body">
+                               <h5><span class="label label-primary">Answer</span></h5>
+
+                              <p>
+                                For cards that are sold out, the total supply that will ever exist is now in the hands of individual owners.
+                                Those cards are no longer available from the Curio Cards site artists, and the only way to get them is to trade with
+                                people who currently own those cards.
+                                <br><br>
+                                We have a marketplace telegram room to assist with finding people willing to sell and making trades
+                                <br><br>
+                                You can find all that information on the <a href="trade.html">Trading</a> page.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                    <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+                             <h4 class="panel-title">
+                                <a href="#" class="ing">Q: What wallets are supported?</a>
+                          </h4>
+
+                        </div>
+                        <div id="question3" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+                                <p>
+                                  As long as it's a wallet that lets you control the private keys, you will recieve your Curio Cards.<br>
+                                  But you won't be able to see or manage them unless you use <a href="https://mycuriowallet.com" target="_blank">CurioWallet</a>.
+                                  Devices like the Trezor and Ledger S nano are also compatable with <a href="https://mycuriowallet.com" target="_blank">CurioWallet</a>,
+                                  allowing you to easily store your Curio Cards in a secure hardware wallet.
+                                  <br><br>
+                                  <a href="https://mycuriowallet.com" target="_blank">CurioWallet</a> is mobile compatable, and we will be adding native iOS and Android apps.
+                                  <br><br>
+                                  <b>Don't</b> use ethereum wallets from exchanges when buying cards. You will not recieve your cards since you do not control the private keys.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/panel-group-->
+            </div>
+        <!-- End of FAQ section -->
+      </center>
+
+      </div>
+
+      <div id="the-team" class="the-team">
+        <div class="inner-heading">
+          <div class="line-left">
+            <div class="heading-horizontal-line"></div>
+          </div>
+          <div class="line-right">
+            <div class="heading-horizontal-line"></div>
+          </div>
+          <h3 class="line-text text-uppercase text-center the-team-title">The team</h3>
+        </div>
+        <div class="container team-container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 text-center">
+              <img class="rounded-circle" src="img/people/travis.jpg" alt="Placeholder image">
+              <h2 class="teammate-name">Travis Dean Uhrig</h2>
+              <h3 class="teammate-company">CEO</h3>
+              <p class="teammate-info">
+                San Francisco Bitcoin Meetup, BitPanel, SFSU
+              </p>
+              <ul class="social-media list-inline">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/travisformayor" target="_blank">
+                    <i class="fa fa-twitter icon-white" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/travisuhrig/" target="_blank">
+                    <i class="fa fa-linkedin icon-white" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+              <img class="rounded-circle" src="img/people/rhett.jpg" alt="Placeholder image">
+              <h2 class="teammate-name">Rhett Creighton</h2>
+              <h3 class="teammate-company">CTO</h3>
+              <p class="teammate-info">
+                Domus Tower, Bitcoin Core Contributor, Zclassic, MIT BS / MS
+              </p>
+              <ul class="social-media list-inline">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/heyrhett" target="_blank">
+                    <i class="fa fa-twitter icon-white" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/heyrhett/" target="_blank">
+                    <i class="fa fa-linkedin icon-white" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+              <img class="rounded-circle" src="img/people/tom.jpg" alt="Placeholder image">
+              <h2 class="teammate-name">Thomas Hunt</h2>
+              <h3 class="teammate-company">CMO</h3>
+              <p class="teammate-info">
+                MadBitcoins, World Crypto Network, The Bitcoin Group, Purse, BTCjam, CSUS
+              </p>
+              <ul class="social-media list-inline">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/MadBitcoins" target="_blank">
+                    <i class="fa fa-twitter icon-white" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/thomashuntbitcoin/" target="_blank">
+                    <i class="fa fa-linkedin icon-white" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div id="the-advisors" class="the-advisors">
+        <div class="inner-heading">
+          <div class="line-left">
+            <div class="heading-horizontal-line"></div>
+          </div>
+          <div class="line-right">
+            <div class="heading-horizontal-line"></div>
+          </div>
+          <h3 class="line-text text-uppercase text-center the-advisors-title">The advisors</h3>
+        </div>
+        <div class="container advisors-container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 text-center">
+              <img class="rounded-circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP88B8AAuUB8e2ujYwAAAAASUVORK5CYII=" alt="Placeholder image">
+              <h3 class="advisor-name">Beedly Doodly</h3>
+              <h4 class="advisor-company">CEO Diddly</h4>
+              <p class="advisor-info">Lorem ipsum dolor sit amet, consectetur.</p>
+              <ul class="social-media list-inline">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa fa-twitter icon-white"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin icon-white"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <img class="rounded-circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP88B8AAuUB8e2ujYwAAAAASUVORK5CYII=" alt="Placeholder image">
+              <h3 class="advisor-name">Beedly Doodly</h3>
+              <h4 class="advisor-company">CEO Diddly</h4>
+              <p class="advisor-info">Lorem ipsum dolor sit amet, consectetur.</p>
+              <ul class="social-media list-inline">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa fa-twitter icon-white"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin icon-white"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <img class="rounded-circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP88B8AAuUB8e2ujYwAAAAASUVORK5CYII=" alt="Placeholder image">
+              <h3 class="advisor-name">Beedly Doodly</h3>
+              <h4 class="advisor-company">CEO Diddly</h4>
+              <p class="advisor-info">Lorem ipsum dolor sit amet, consectetur.</p>
+              <ul class="social-media list-inline">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa fa-twitter icon-white"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin icon-white"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <img class="rounded-circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP88B8AAuUB8e2ujYwAAAAASUVORK5CYII=" alt="Placeholder image">
+              <h3 class="advisor-name">Beedly Doodly</h3>
+              <h4 class="advisor-company">CEO Diddly</h4>
+              <p class="advisor-info">Lorem ipsum dolor sit amet, consectetur.</p>
+              <ul class="social-media list-inline">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa fa-twitter icon-white"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin icon-white"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <section id="bottom-main-menu" class="bottom-main-menu container">
+    <h3 class="stay-connected">Stay Connected</h3>
+    <div class="bottom-container d-flex flex-column flex-md-row justify-content-between">
+      <div class="mailing-container">
+        <!--
+        <p>Join our community and sign up for the mailing list!</p>
+        <div class="form-inline email-form-container">
+          <input type="email" id="input-email" class="form-control" placeholder="E-mail Address">
+          <a class="email-button" href="#" role="button" aria-pressed="true">
+            <img src="img/email-button-arrow.svg" alt="email button">
+          </a>
+        </div>
+        -->
+        <ul class="social-media list-inline">
+
+          <li class="list-inline-item">
+            <a href="https://t.me/CurioCards/" target="_blank">
+              <i class="fa fa-paper-plane icon-pink" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/MyCurioCards" target="_blank">
+              <i class="fa fa-twitter icon-pink" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCJKS3KsYbmjFtH0FCQjWwXg" target="_blank">
+              <i class="fa fa-youtube-play icon-pink" aria-hidden="true"></i>
+            </a>
+          </li>
+          <!--<li class="list-inline-item">
+            <a href="https://mycuriocards.slack.com/shared_invite/MTgxMTY0MTg0NjkzLTE0OTQzNjE0OTQtMWRiMjI1ZjQxNw" target="_blank">
+              <i class="fa fa-slack icon-pink" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/Mycuriocards-169308546928734/" target="_blank">
+              <i class="fa fa-facebook icon-pink" aria-hidden="true"></i>
+            </a>
+          </li>-->
+        </ul>
+      </div>
+      <div class="curio-cards-bottom-menu d-flex">
+        <div class="get-curio-cards">
+          <h3 class="heading">Get Curio Cards</h3>
+          <ul class="list-unstyled">
+            <li><a href="#main-section">Buy Curio Cards</a></li>
+            <li><a href="trade.html">Trade Curio Cards</a></li>
+            <!--<li><a href="#">Earn Curio Cards</a></li>-->
+            <li><a href="index.html#about-the-artist">The Artists</a></li>
+          </ul>
+        </div>
+        <div class="about-curio-cards">
+          <h3 class="heading">About Curio Cards</h3>
+          <ul class="list-unstyled">
+            <li><a href="#how-to-buy">What are Curio Cards?</a></li>
+            <li><a href="#how-to-buy">FAQs</a></li>
+            <li><a href="https://t.me/CurioCards/" target="_blank">Join Us on Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <img src="img/logo-bottom.svg" alt="logo">
+    <p>&copy; Copyright 2017 | Mothership Inc.</p>
+  </footer>
+
+  <!-- jQuery first (full version), then Tether, then Bootstrap js. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <!-- Clipboard js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+  <!-- FlipClock js -->
+  <script src="lib/flipclock/flipclock.min.js"></script>
+  <!-- Main js -->
+  <script src="js/main.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/vending_all.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-104238868-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+</html>

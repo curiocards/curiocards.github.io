@@ -1,0 +1,110 @@
+{
+  "card":"",
+  "file":"",
+  "name":"",
+  "total_supply":"",
+  "artist":"",
+  "date_released":"",
+  "card_address":"",
+  "vend_address01":"",
+  "vend01_price":""
+}
+{
+  "card":"01",
+  "file":"01.jpg",
+  "name":"",
+  "total_supply":"",
+  "artist":"phneep",
+  "date_released":"",
+  "card_address":"",
+  "vend_address01":"",
+  "vend01_price":""
+}
+{
+  "card":"10",
+  "file":"10.jpg",
+  "name":"Future",
+  "total_supply":"",
+  "artist":"phneep",
+  "date_released":"",
+  "card_address":"0x72b34d637C0d14acE58359Ef1bF472E4b4c57125",,
+  "vend_address01":"0x46C4723111e2bAFeF7d5d0664B3F7BC68D875DeA",
+  "vend01_price":""
+}
+{
+  "card":"21",
+  "file":"21.png",
+  "name":"The Wizard",
+  "total_supply":"500",
+  "artist":"robek",
+  "date_released":"",
+  "card_address":"0xB7A5a84Ff90e8Ef91250fB56c50a7bB92a6306EE",
+  "vend_address01":"",
+  "vend01_price":""
+}
+{
+  "card":"22",
+  "file":"22.png",
+  "name":"The Bard",
+  "total_supply":"500",
+  "artist":"robek",
+  "date_released":"",
+  "card_address":"0x148fF761D16632da89F3D30eF3dFE34bc50CA765",
+  "vend_address01":"",
+  "vend01_price":""
+}
+{
+  "card":"23",
+  "file":"23.gif",
+  "name":"The Barbarian",
+  "total_supply":"250",
+  "artist":"robek",
+  "date_released":"",
+  "card_address":"0xCDE7185B5C3Ed9eA68605a960F6653AA1a5b5C6C",
+  "vend_address01":"",
+  "vend01_price":""
+}
+{
+  "card":"27",
+  "file":"27.jpg",
+  "name":"Blue",
+  "total_supply":"600",
+  "artist":"marisol",
+  "date_released":"",
+  "card_address":"0xfb9f3fa2502d01d43167a0a6e80be03171df407e",
+  "vend_address01":"0x87767E3aa2479b3faF5FbbB7C7C6874E9e3aB14e",
+  "vend01_price":""
+}
+{
+  "card":"28",
+  "file":"28.jpg",
+  "name":"Pink",
+  "total_supply":"400",
+  "artist":"marisol",
+  "date_released":"",
+  "card_address":"0x59D190e8A2583C67E62eEc8dA5EA7f050d8BF27e",
+  "vend_address01":"0x3273eF350E9ffC8f33eA80971650c7c627B43120"
+  "vend01_price":""
+}
+{
+  "card":"29",
+  "file":"29.jpg",
+  "name":"Yellow",
+  "total_supply":"200",
+  "artist":"marisol",
+  "date_released":"",
+  "card_address":"0xD3540bCD9c2819771F9D765Edc189cBD915FEAbd",
+  "vend_address01":"0x39B058eC8B2fa19Cec655A87EaC127Ba434111b1",
+  "vend01_price":""
+}
+{
+  "card":"30",
+  "file":"30.gif",
+  "name":"Eclipse",
+  "total_supply":"",
+  "artist":"thoros",
+  "date_released":"",
+  "card_address":"0x7f5b230dc580d1e67df6ed30dee82684dd113d1f",
+  "vend_address01":"0x338C6fbcEff5433412382590a7de6da03Bb57389",
+  "vend01_price":""
+}
