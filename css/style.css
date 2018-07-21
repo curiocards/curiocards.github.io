@@ -278,9 +278,9 @@ nav.page-navbar .nav-item {
     -moz-transform: scale(0.5) !important;
     margin-top: 30px !important;
   }
-  //.main-section .time-left-info {
-  //  padding-top: 175px !important;
-  //}
+  /*.main-section .time-left-info {
+      padding-top: 175px !important;
+  } */
   .down-section-info {
     margin-top: 40px !important;
   }
@@ -290,23 +290,23 @@ nav.page-navbar .nav-item {
     zoom: 0.6 !important;
     -moz-transform: scale(0.6) !important;
   }
-  //.main-section .time-left-info {
-  //  padding-top: 210px !important;
-  //}
+  /*.main-section .time-left-info {
+    padding-top: 210px !important;
+  }*/
 }
 @media (min-width: 478px) and (max-width: 599px) {
   .countdown {
     zoom: 0.7 !important;
     -moz-transform: scale(0.7) !important;
   }
-  //.main-section .time-left-info {
-  //  padding-top: 245px !important;
-  //}
+  /*.main-section .time-left-info {
+    padding-top: 245px !important;
+  }*/
 }
 @media (min-width: 600px) and (max-width: 768px) {
-  //.main-section .time-left-info {
-  //  padding-top: 280px !important;
-  //}
+  /*.main-section .time-left-info {
+    padding-top: 280px !important;
+  }*/
 }
 
 .countdown .flip-clock-divider .flip-clock-dot {
@@ -1153,7 +1153,7 @@ nav.page-navbar .nav-item {
   color: #f24645;
   letter-spacing: 1px;
   margin-bottom: 10px;
-  //font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .body-content h3 {
