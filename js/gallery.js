@@ -5,7 +5,7 @@ let contractABI = [{"constant":true,"inputs":[],"name":"name","outputs":[{"name"
 
 function getWeb3() {
   let Web3 = require('web3');
-    web3 = new Web3(new Web3.providers.HttpProvider('https://api.myetherapi.com/eth'));
+    web3 = new Web3(new Web3.providers.HttpProvider('https://api.myetherwallet.com/eth'));
     return web3;
 }
 
